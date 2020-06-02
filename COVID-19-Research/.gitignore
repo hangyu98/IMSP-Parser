@@ -27,6 +27,7 @@ hs_err_pid*
 Parser/Test/*.txt
 Parser/Test/*.csv
 
-
 Parser/Sequence
+
+src/Alignment
 
