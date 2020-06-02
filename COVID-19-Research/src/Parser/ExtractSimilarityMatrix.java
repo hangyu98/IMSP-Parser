@@ -10,15 +10,15 @@ public class ExtractSimilarityMatrix {
     /**
      * name of hitTable
      */
-    static String hitTableFileName = "ACE2 alignment related/Test/D5J28CM911N-Alignment-HitTable.csv";
+    static String hitTableFileName = "Parser/Test/D5J28CM911N-Alignment-HitTable.csv";
     /**
-     * name of hitTable
+     * name of alignment file
      */
-    static String alignmentFileName = "ACE2 alignment related/Test/D5J28CM911N-Alignment.txt";
+    static String alignmentFileName = "Parser/Test/D5J28CM911N-Alignment.txt";
     /**
      * output file name
      */
-    static String resultFile = "ACE2 alignment related/Result/" + hitTableFileName.split("/")[2].split("-")[0] + "-Result.csv";
+    static String resultFile = "Parser/Result/" + hitTableFileName.split("/")[2].split("-")[0] + "-Result.csv";
     /**
      * id-name map, checked
      */
