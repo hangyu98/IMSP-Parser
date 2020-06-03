@@ -1,5 +1,5 @@
-null,nucleoprotein [Middle East respiratory syndrome-related coronavirus],nucleocapsid phosphoprotein [Severe acute respiratory syndrome coronavirus 2],nucleocapsid protein [Severe acute respiratory syndrome-related coronavirus],nucleocapsid phosphoprotein [Human coronavirus HKU1]
-nucleoprotein [Middle East respiratory syndrome-related coronavirus],100.00,64.32,64.23,50.53
-nucleocapsid phosphoprotein [Severe acute respiratory syndrome coronavirus 2],63.82,100.00,94.31,65.00
-nucleocapsid protein [Severe acute respiratory syndrome-related coronavirus],65.66,94.31,100.00,65.00
-nucleocapsid phosphoprotein [Human coronavirus HKU1],54.22,54.14,55.65,100.00
+null,Middle East respiratory syndrome-related coronavirus,Severe acute respiratory syndrome coronavirus 2,Severe acute respiratory syndrome-related coronavirus,Human coronavirus HKU1
+Middle East respiratory syndrome-related coronavirus,100.00,64.32,64.23,50.53
+Severe acute respiratory syndrome coronavirus 2,63.82,100.00,94.31,65.00
+Severe acute respiratory syndrome-related coronavirus,65.66,94.31,100.00,65.00
+Human coronavirus HKU1,54.22,54.14,55.65,100.00

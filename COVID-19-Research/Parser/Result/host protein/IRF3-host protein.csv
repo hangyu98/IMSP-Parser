@@ -1,0 +1,6 @@
+null,Homo sapiens,Camelus dromedarius,Rattus norvegicus,Mus musculus,Canis lupus familiaris
+Homo sapiens,100.00,43.48,76.23,72.14,48.28
+Camelus dromedarius,43.48,100.00,80.00,78.30,83.27
+Rattus norvegicus,76.23,80.00,100.00,91.90,78.29
+Mus musculus,72.14,78.30,91.90,100.00,76.49
+Canis lupus familiaris,48.28,83.27,78.29,76.49,100.00

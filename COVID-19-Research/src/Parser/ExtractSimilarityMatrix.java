@@ -46,8 +46,19 @@ public class ExtractSimilarityMatrix {
      */
     public void extractOneSimMatrix() {
         try {
-            map = ReplaceName.buildNameIDMap(dir + "/" + alignmentFileName);
+            File f = new File(dir + "FASTA.txt");
+            // if FASTA file exists, read from FASTA
+            if (f.exists()) {
+                map = ReplaceName.buildNameIDMap(dir + "/FASTA.txt");
+            } else {
+                map = ReplaceName.buildNameIDMap(dir + "/" + alignmentFileName);
+            }
+            System.out.println("map: " + map.toString());
+
+            // number of sequences
             numOfSeq = map.size() + 1;
+
+            // hitTable name
             File file = new File(dir + "/" + hitTableFileName);
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(resultFileName));
