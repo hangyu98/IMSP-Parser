@@ -7,17 +7,8 @@ Parse raw data from NCBI Blastp to similarity matrix stored in csv
 git clone git@github.com:SupremeEthan/COVID-19-Research-Data-Parser.git
 ```
 
-## Usage
+## Instruction
 
-1. Navigate to Parser package and find ExtractSimilarityMatrix.java
-2. change the file name accordingly
-
-```java
-/**
- * name of hitTable
- */
-static String hitTableFileName = "Parser/Test/hitTable_file_name.csv";
-/**
- * name of alignment file
- */
-static String alignmentFileName = "Parser/Test/alignment_file_name.txt";
+1. Put hitTable.csv and alignment.txt in Parser/protein data/layer_name/protein_name/
+2. Navigate to src/Parser/driver.java
+3. Run the main method, the result will be in Parser/Result/layer_name/protein_name-layer_name.csv
