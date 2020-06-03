@@ -1,0 +1,5 @@
+null,membrane protein [Middle East respiratory syndrome-related coronavirus],membrane glycoprotein [Human coronavirus HKU1],matrix protein [Severe acute respiratory syndrome-related coronavirus],membrane glycoprotein [Severe acute respiratory syndrome coronavirus 2]
+membrane protein [Middle East respiratory syndrome-related coronavirus],100.00,61.82,62.25,61.08
+membrane glycoprotein [Human coronavirus HKU1],61.82,100.00,58.02,57.42
+matrix protein [Severe acute respiratory syndrome-related coronavirus],62.25,58.02,100.00,96.40
+membrane glycoprotein [Severe acute respiratory syndrome coronavirus 2],61.08,57.42,96.40,100.00

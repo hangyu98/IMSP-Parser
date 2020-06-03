@@ -5,7 +5,9 @@ import java.util.HashMap;
 
 public class ReplaceName {
     /**
-     * driver code
+     * build name-id map
+     * @param fileName name of the file
+     * @return a hashmap of such
      */
     public static HashMap<String, String> buildNameIDMap(String fileName) {
         try {

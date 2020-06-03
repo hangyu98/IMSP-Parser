@@ -1,6 +1,7 @@
 package Parser;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -12,35 +13,44 @@ public class ExtractSimilarityMatrix {
     /**
      * name of hitTable
      */
-    static String hitTableFileName = "Parser/Test/D5J28CM911N-Alignment-HitTable.csv";
+    String hitTableFileName;
     /**
      * name of alignment file
      */
-    static String alignmentFileName = "Parser/Test/D5J28CM911N-Alignment.txt";
+    String alignmentFileName;
     /**
      * output file name
      */
-    static String resultFile = "Parser/Result/" + hitTableFileName.split("/")[2].split("-")[0] + "-Result.csv";
+    String resultFileName;
     /**
      * id-name map, checked
      */
-    static HashMap<String, String> map = ReplaceName.buildNameIDMap(alignmentFileName);
+    HashMap<String, String> map;
 
     /**
      * number of aligned sequences
      */
-    static int numOfSeq = map.size() + 1;
+    int numOfSeq;
+
+    String dir;
+
+    public ExtractSimilarityMatrix(String hitTableFileName, String alignmentFileName, String resultFileName, String dir) {
+        this.hitTableFileName = hitTableFileName;
+        this.alignmentFileName = alignmentFileName;
+        this.resultFileName = resultFileName;
+        this.dir = dir;
+    }
 
     /**
-     * driver code
-     *
-     * @param args not used
+     * build one similarity matrix
      */
-    public static void main(String[] args) {
+    public void extractOneSimMatrix() {
         try {
-            File file = new File(hitTableFileName);
+            map = ReplaceName.buildNameIDMap(dir + "/" + alignmentFileName);
+            numOfSeq = map.size() + 1;
+            File file = new File(dir + "/" + hitTableFileName);
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(resultFile));
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(resultFileName));
             String line = bufferedReader.readLine();
             String[][] matrix = new String[numOfSeq][numOfSeq];
             matrix[0][0] = "matrix name";
@@ -88,7 +98,10 @@ public class ExtractSimilarityMatrix {
                         if (row == 0) {
                             bufferedWriter.write(map.get(matrix[row][col]) + ",");
                         } else {
-                            bufferedWriter.write(matrix[row][col] + ",");
+                            if (matrix[row][col] == null)
+                                bufferedWriter.write("null,");
+                            else
+                                bufferedWriter.write(matrix[row][col] + ",");
                         }
                     }
                     // last column
@@ -96,7 +109,10 @@ public class ExtractSimilarityMatrix {
                         if (row == 0) {
                             bufferedWriter.write(map.get(matrix[row][col]));
                         } else {
-                            bufferedWriter.write(matrix[row][col]);
+                            if (matrix[row][col] == null)
+                                bufferedWriter.write("null");
+                            else
+                                bufferedWriter.write(matrix[row][col]);
                         }
                     }
                 }
@@ -117,7 +133,7 @@ public class ExtractSimilarityMatrix {
      * @param idx    index pointing to an empty slot
      * @return new index pointing to the next empty leading entry
      */
-    private static int updateSet(HashSet<String> set, String name, String[][] matrix, int idx) {
+    private int updateSet(HashSet<String> set, String name, String[][] matrix, int idx) {
         if (!set.contains(name)) {
             matrix[0][idx] = name;
             matrix[idx][0] = name;
