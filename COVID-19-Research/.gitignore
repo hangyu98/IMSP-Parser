@@ -30,3 +30,7 @@ Parser/Sequence
 src/Alignment
 
 .DS_Store
+
+Spike alignment related
+
+Parser/result/old data

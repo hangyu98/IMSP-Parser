@@ -1,7 +1,6 @@
 package Parser;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -46,14 +45,13 @@ public class ExtractSimilarityMatrix {
      */
     public void extractOneSimMatrix() {
         try {
-            File f = new File(dir + "FASTA.txt");
+            File f = new File(dir + "/FASTA.txt");
             // if FASTA file exists, read from FASTA
             if (f.exists()) {
                 map = ReplaceName.buildNameIDMap(dir + "/FASTA.txt");
             } else {
                 map = ReplaceName.buildNameIDMap(dir + "/" + alignmentFileName);
             }
-            System.out.println("map: " + map.toString());
 
             // number of sequences
             numOfSeq = map.size() + 1;

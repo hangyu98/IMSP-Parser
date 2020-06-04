@@ -16,8 +16,8 @@ public class ReplaceName {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
             HashMap<String, String> map = new HashMap<>();
             String line = bufferedReader.readLine();
-            // if FASTA file exists
-            if (fileName.endsWith("FASTA.txt")) {
+            // if FASTA file does not exists
+            if (!fileName.endsWith("FASTA.txt")) {
                 while (line != null) {
                     if (line.length() == 0)
                         break;
@@ -47,14 +47,13 @@ public class ReplaceName {
         String name = line.split("\\[")[1];
         name = name.substring(0, name.length() - 1);
         String code = line.substring(1).split(" ", 2)[0];
-        System.out.println("code: " + code);
         map.put(code, name);
     }
 
     private static void extractPair2(HashMap<String, String> map, String line) {
         String res = line.split("]")[0].split(":", 2)[1];
         String[] pair = res.split(" ", 2);
-        map.put(pair[0], (pair[1] + "]").replace(",", ""));
+        map.put(pair[0], (pair[1].split("\\[")[1]));
     }
 
 }

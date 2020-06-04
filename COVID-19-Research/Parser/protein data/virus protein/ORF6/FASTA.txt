@@ -1,0 +1,5 @@
+>NP_828856.1 hypothetical protein sars6 [Severe acute respiratory syndrome-related coronavirus]
+MFHLVDFQVTIAEILIIIMRTFRIAIWNLDVIISSIVRQLFKPLTKKNYSELDDEEPMELDYP
+
+>YP_009724394.1 ORF6 protein [Severe acute respiratory syndrome coronavirus 2]
+MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEID

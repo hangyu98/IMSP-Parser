@@ -37,7 +37,7 @@ public class Driver {
                             }
                         }
                         // path for where to store the file
-                        String resultFileName = "Parser/Result/" +
+                        String resultFileName = "Parser/result/" +
                                 dir.split("/")[2] +
                                 "/" + dir.split("/")[3] +
                                 "-" + dir.split("/")[2] +
