@@ -1,0 +1,9 @@
+null,Homo sapiens,Bos taurus,Felis catus,Camelus dromedarius,Ictidomys tridecemlineatus,Canis lupus familiaris,Mus musculus,Rattus norvegicus
+Homo sapiens,100.00,64.87,63.00,63.72,63.60,62.86,59.04,58.13
+Bos taurus,64.70,100.00,72.50,78.53,64.97,71.83,58.40,60.19
+Felis catus,61.91,71.56,100.00,74.62,63.64,82.44,60.53,60.11
+Camelus dromedarius,63.19,76.70,74.25,100.00,63.84,71.29,58.43,58.56
+Ictidomys tridecemlineatus,63.47,64.53,63.64,62.73,100.00,62.38,61.85,61.66
+Canis lupus familiaris,61.96,71.83,82.44,71.67,61.51,100.00,59.89,62.31
+Mus musculus,59.23,58.08,60.68,59.89,61.08,59.66,100.00,85.40
+Rattus norvegicus,58.01,60.11,60.68,59.96,61.27,62.31,85.40,100.00
