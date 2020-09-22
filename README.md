@@ -1,8 +1,11 @@
 # CrossNELP's Data parser
 
-Parse raw data from NCBI Blastp to similarity matrix stored in csv 
+Parse raw data from NCBI Blastp to pair-wise similarity matrices stored in csv 
+
 ## Installation
+
 - Clone the repository
+- Make sure you have JDK 1.7 or above installed
 
 ## Usage
 
