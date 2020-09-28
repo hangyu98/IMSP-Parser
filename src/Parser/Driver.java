@@ -7,7 +7,7 @@ public class Driver {
     /**
      * folder containing all data
      */
-    static String folderPath = "Parser/protein data";
+    static String folderPath = "data/protein data";
 
     /**
      * main driver
@@ -37,7 +37,7 @@ public class Driver {
                             }
                         }
                         // path for where to store the file
-                        String resultFileName = "Parser/result/" +
+                        String resultFileName = "data/result/" +
                                 dir.split("/")[2] +
                                 "/" + dir.split("/")[3] +
                                 "-" + dir.split("/")[2] +
@@ -53,6 +53,5 @@ public class Driver {
                 }
             }
         }
-
     }
 }
