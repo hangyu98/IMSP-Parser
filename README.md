@@ -11,4 +11,4 @@ Parse raw data from NCBI Blastp into pair-wise similarity matrices
 
 - Put hitTable.csv and alignment.txt in ```Parser/protein data/layer_name/protein_name/```
 - Navigate to ```src/Parser/driver.java```
-- Run the main method, the result will be in ```Parser/Result/layer_name/protein_name-layer_name.csv```
+- Run the main method, the result will be in ```Parser/Result/layer_name/protein_name-group_name.csv```
